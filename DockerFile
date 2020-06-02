@@ -1,0 +1,8 @@
+FROM maven:3.6.1-jdk-11 as build
+
+RUN mvn package
+
+VOLUME /tmp
+
+ADD target/BackEnd-Services-1.0.SANPSHOT.jar app.jar
+ENTRYPOINT["java", "-jar", "app.jar"]
