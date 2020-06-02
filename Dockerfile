@@ -1,5 +1,5 @@
 FROM maven:3.6.1-jdk-11
-WORKINGDIR /app
+WORKDIR /app
 VOLUME /tmp
 COPY src ./src
 COPY pom.xml .
