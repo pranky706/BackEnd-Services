@@ -1,0 +1,7 @@
+---
+applications:
+ - name: BackEndServices
+   random-route: true
+   path: target/BackEnd-Services-1.0.SANPSHOT.jar
+   memory: 256M
+   instances: 1
